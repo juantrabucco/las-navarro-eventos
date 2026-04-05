@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Las Navarro Eventos</title>
+    <meta name="description" content="Organizamos los momentos que no se olvidan. Casamientos y celebraciones en Buenos Aires.">
+    
+    <link rel="icon" href="assets/icons/favicon.ico">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,600;1,400;1,600&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- 5. Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="#servicios">Servicios</a>
+                <a href="#nosotras">Nosotras</a>
+                <a href="#galeria">Galería</a>
+            </div>
+            
+            <a href="#" class="nav-logo">
+                <img src="assets/logos/logo-bordo.png" alt="Las Navarro Eventos" class="logo-image">
+            </a>
+            
+            <div class="nav-right">
+                <a href="#prensa">Prensa</a>
+                <a href="#contacto">Contacto</a>
+                <a href="#contacto" class="nav-cta">[Hablemos &rarr;]</a>
+            </div>
+
+            <!-- Mobile menu button -->
+            <button class="menu-btn" id="menu-btn" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobile-menu">
+            <a href="#servicios">Servicios</a>
+            <a href="#nosotras">Nosotras</a>
+            <a href="#galeria">Galería</a>
+            <a href="#prensa">Prensa</a>
+            <a href="#contacto">Contacto</a>
+            <a href="#contacto" class="nav-cta">[Hablemos &rarr;]</a>
+        </div>
+    </nav>
+
+    <!-- 6. Hero -->
+    <header class="hero">
+        <div class="hero-media">
+            <video src="assets/videos/hero-video.mp4" autoplay muted loop playsinline id="hero-video">
+            </video>
+            <img src="assets/images/hero/hero-01.jpg" alt="Las Navarro Eventos" class="hero-fallback-img">
+            <div class="hero-overlay"></div>
+        </div>
+        
+        <div class="hero-content reveal">
+            <img src="assets/logos/logo-crema.png" alt="Las Navarro Eventos" class="hero-logo">
+            <h1 class="hero-phrase">Organizamos los momentos que no se olvidan.</h1>
+            <a href="#contacto" class="btn btn-outline-crema">EMPEZAR A PLANIFICAR</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Separator -->
+        <div class="section-separator">
+            <img src="assets/icons/icono-ln-bordo.svg" alt="" class="separator-icon">
+        </div>
+
+        <!-- 7. Servicios -->
+        <section id="servicios" class="servicios">
+            <div class="container">
+                <div class="cards-grid">
+                    <article class="service-card reveal">
+                        <img src="assets/images/servicios/casamiento.jpg" alt="Casamiento" class="card-img">
+                        <div class="card-overlay"></div>
+                        <div class="card-content">
+                            <h2 class="card-title">Casamiento</h2>
+                            <p class="card-desc">Nos ocupamos de cada detalle para que el día más importante de sus vidas sea exactamente como lo imaginaron — y mejor.</p>
+                        </div>
+                    </article>
+                    
+                    <article class="service-card reveal">
+                        <img src="assets/images/servicios/celebracion.jpg" alt="Celebraciones" class="card-img">
+                        <div class="card-overlay"></div>
+                        <div class="card-content">
+                            <h2 class="card-title">Celebraciones</h2>
+                            <p class="card-desc">Cumpleaños de 50, 60, 70. Eventos que merecen ser recordados con la misma emoción que fueron vividos.</p>
+                        </div>
+                    </article>
+                    
+                    <article class="service-card reveal">
+                        <img src="assets/images/servicios/eventos.jpg" alt="A medida" class="card-img">
+                        <div class="card-overlay"></div>
+                        <div class="card-content">
+                            <h2 class="card-title">A medida</h2>
+                            <p class="card-desc">Cada evento es diferente. Nos adaptamos a tu visión, presupuesto y expectativas con propuestas pensadas para vos.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. Proceso -->
+        <section id="proceso" class="proceso reveal">
+            <div class="container">
+                <div class="timeline">
+                    <div class="timeline-step">
+                        <span class="step-num">1</span>
+                        <h3 class="step-title">Primera reunión</h3>
+                    </div>
+                    <div class="timeline-step">
+                        <span class="step-num">2</span>
+                        <h3 class="step-title">Búsqueda de proveedores</h3>
+                    </div>
+                    <div class="timeline-step">
+                        <span class="step-num">3</span>
+                        <h3 class="step-title">Coordinación</h3>
+                    </div>
+                    <div class="timeline-step">
+                        <span class="step-num">4</span>
+                        <h3 class="step-title">El gran día</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. Nosotras -->
+        <section id="nosotras" class="nosotras">
+            <div class="container nosotras-grid">
+                <div class="nosotras-img-col reveal">
+                    <img src="assets/images/nosotras/lola-bebu.jpg" alt="Lola y Bebu Navarro" class="img-fluid">
+                </div>
+                <div class="nosotras-text-col reveal">
+                    <span class="label">NOSOTRAS</span>
+                    <h2 class="title-italic">Somos dos hermanas que encontraron su vocación en hacer que los momentos más importantes de las personas sean exactamente como los imaginaron.</h2>
+                    <div class="contact-info">
+                        <p>Lola: <a href="tel:+5491140726579">11 4072 6579</a></p>
+                        <p>Bebu: <a href="tel:+5491140726577">11 4072 6577</a></p>
+                        <p><a href="mailto:eventos@lasnavarro.com">eventos@lasnavarro.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Separator -->
+        <div class="section-separator">
+            <img src="assets/icons/icono-ln-bordo.svg" alt="" class="separator-icon">
+        </div>
+
+        <!-- 10. Galería -->
+        <section id="galeria" class="galeria">
+            <div class="container">
+                <div class="masonry-grid">
+                    <div class="masonry-item reveal"><img src="assets/images/galeria/galeria-01.jpg" alt="Evento 1"></div>
+                    <div class="masonry-item reveal"><img src="assets/images/galeria/galeria-02.jpg" alt="Evento 2"></div>
+                    <div class="masonry-item reveal"><img src="assets/images/galeria/galeria-03.jpg" alt="Evento 3"></div>
+                    <div class="masonry-item reveal"><img src="assets/images/galeria/galeria-04.jpg" alt="Evento 4"></div>
+                    <div class="masonry-item reveal"><img src="assets/images/galeria/galeria-05.jpg" alt="Evento 5"></div>
+                    <div class="masonry-item reveal"><img src="assets/images/galeria/galeria-06.jpg" alt="Evento 6"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 11. Prensa -->
+        <section id="prensa" class="prensa">
+            <div class="container">
+                <div class="prensa-header reveal">
+                    <img src="assets/logos/logo-bordo.png" alt="Las Navarro Eventos" class="prensa-section-logo">
+                </div>
+
+                <blockquote class="prensa-quote reveal">
+                    <p>&ldquo;...supervisaron cada momento: desde la recepción hasta el catering (hubo picadas, diferentes tipos de bocaditos y un asado imperdible)...&rdquo;</p>
+                    <cite class="prensa-quote-source">&mdash; ¡Hola!, La Nación</cite>
+                </blockquote>
+
+                <div class="prensa-layout">
+                    <div class="prensa-photo-wrapper reveal">
+                        <div class="prensa-photo-frame">
+                            <img src="assets/images/prensa/hola-lanacion.jpg" alt="En la quinta de Tigre donde se realizó la fiesta" class="prensa-photo-img">
+                            <p class="prensa-photo-caption">En la quinta de Tigre en donde se realizó la fiesta. Jean con Jean, la banda de Ignacio (toca la güira)</p>
+                        </div>
+                    </div>
+
+                    <div class="prensa-sidebar reveal">
+                        <h4 class="media-title">Media Features</h4>
+                        
+                        <div class="media-social">
+                            <a href="https://instagram.com/lasnavarro.eventos" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-icon">
+                                <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                            </a>
+                        </div>
+
+                        <div class="media-links">
+                            <a href="https://www.lanacion.com.ar/revista-hola/la-nieta-de-nora-carpena-todas-las-fotos-de-la-boda-ignacio-bocha-bosch-y-solana-figueiras-bredeston-nid01012026/" target="_blank" rel="noopener noreferrer" class="media-link">
+                                <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                                <span>¡Hola! en La Nación</span>
+                            </a>
+                            
+                            <a href="https://caras.perfil.com/noticias/celebridades/casamiento-solana-nieta-nora-carpena-tras-10-anos-novia.phtml" target="_blank" rel="noopener noreferrer" class="media-link">
+                                <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                                <span>Nota en Caras</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <blockquote class="prensa-quote prensa-quote-secondary reveal">
+                    <p>&ldquo;La celebración incluyó todos los clásicos: el tradicional vals, música a cargo de un DJ que mantuvo la pista encendida hasta el amanecer y brindis interminables.&rdquo;</p>
+                    <cite class="prensa-quote-source">&mdash; Caras</cite>
+                </blockquote>
+            </div>
+        </section>
+
+        <!-- 12. Contacto -->
+        <section id="contacto" class="contacto reveal">
+            <div class="container text-center">
+                <span class="label">¿EMPEZAMOS A PLANIFICAR?</span>
+                <h2 class="title-italic">Contanos de tu evento. Nos encantaría acompañarlos.</h2>
+                <div class="contacto-actions">
+                    <a href="https://wa.me/5491140726579" target="_blank" rel="noopener noreferrer" class="btn btn-outline-bordo">WHATSAPP</a>
+                    <a href="mailto:eventos@lasnavarro.com" class="btn btn-outline-bordo">EMAIL</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 13. Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <img src="assets/logos/logo-crema.png" alt="Las Navarro Eventos" class="footer-logo">
+            </div>
+            
+            <div class="footer-icon">
+                <img src="assets/icons/icono-ln-crema.svg" alt="" class="footer-ln-icon">
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="year">2026</span> Las Navarro Eventos.</p>
+                <div class="footer-links">
+                    <a href="https://instagram.com/lasnavarro.eventos" target="_blank" rel="noopener noreferrer">Instagram</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
