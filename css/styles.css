@@ -362,7 +362,7 @@ h1, h2, h3, .title-italic {
 
 /* 8. Proceso */
 .proceso {
-  background-color: var(--color-timeline-bg);
+  background-color: var(--color-rosa);
   padding: 100px 0;
 }
 
@@ -396,7 +396,7 @@ h1, h2, h3, .title-italic {
 .step-num {
   width: 48px;
   height: 48px;
-  background-color: var(--color-timeline-bg);
+  background-color: var(--color-rosa);
   border: 1px solid var(--color-bordo);
   color: var(--color-bordo);
   display: flex;
@@ -554,6 +554,7 @@ h1, h2, h3, .title-italic {
 
 /* 12. Contacto */
 .contacto {
+  background-color: var(--color-rosa);
   padding: 120px 0;
 }
 
