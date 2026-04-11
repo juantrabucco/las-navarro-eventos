@@ -22,12 +22,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 2. Navbar behavior
     const navbar = document.getElementById('navbar');
+    const navLogoImg = document.getElementById('nav-logo-img');
     
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
             navbar.classList.add('scrolled');
+            if (navLogoImg) navLogoImg.src = 'assets/logos/logo-bordo.png';
         } else {
             navbar.classList.remove('scrolled');
+            if (navLogoImg) navLogoImg.src = 'assets/logos/logo-crema.png';
         }
     });
 

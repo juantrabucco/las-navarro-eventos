@@ -128,12 +128,38 @@ h1, h2, h3, .title-italic {
   transition: all 0.3s ease;
 }
 
+.navbar .nav-left a, 
+.navbar .nav-right a {
+  color: var(--color-crema);
+}
+
+.navbar .nav-cta {
+  color: var(--color-crema) !important;
+}
+
+.navbar .menu-btn span {
+  background-color: var(--color-crema);
+}
+
 .navbar.scrolled {
   background-color: rgba(237, 234, 218, 0.9);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   padding: 16px 0;
   border-bottom: 1px solid rgba(119, 21, 56, 0.1);
+}
+
+.navbar.scrolled .nav-left a, 
+.navbar.scrolled .nav-right a {
+  color: var(--color-oscuro);
+}
+
+.navbar.scrolled .nav-cta {
+  color: var(--color-bordo) !important;
+}
+
+.navbar.scrolled .menu-btn span {
+  background-color: var(--color-oscuro);
 }
 
 .nav-container {
@@ -477,7 +503,9 @@ h1, h2, h3, .title-italic {
 .prensa-label {
   text-align: center;
   color: var(--color-rosa);
-  margin-bottom: 56px;
+  margin-bottom: 64px;
+  font-size: 14px;
+  letter-spacing: 0.3em;
 }
 
 .prensa-stack {
