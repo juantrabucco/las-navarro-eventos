@@ -469,14 +469,14 @@ h1, h2, h3, .title-italic {
 
 /* 11. Prensa */
 .prensa {
-  background-color: var(--color-oscuro);
+  background-color: var(--color-crema);
   padding: 120px 0;
-  color: var(--color-crema);
+  color: var(--color-oscuro);
 }
 
 .prensa-label {
   text-align: center;
-  color: rgba(237, 234, 218, 0.4);
+  color: var(--color-bordo);
   margin-bottom: 56px;
 }
 
@@ -484,7 +484,7 @@ h1, h2, h3, .title-italic {
   position: relative;
   max-width: 700px;
   margin: 0 auto;
-  height: 520px;
+  height: 540px;
 }
 
 .prensa-card {
@@ -494,30 +494,34 @@ h1, h2, h3, .title-italic {
   width: 100%;
   display: block;
   cursor: pointer;
-  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+              opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+              z-index 0s;
 }
 
 .prensa-card-inner {
   background: #fff;
   overflow: hidden;
-  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 40px rgba(26, 16, 8, 0.12);
+  border: 1px solid rgba(26, 16, 8, 0.06);
 }
 
 .prensa-card-img {
   width: 100%;
-  height: 420px;
+  height: 430px;
   object-fit: cover;
   object-position: top center;
   transition: transform 0.6s ease;
 }
 
 .prensa-card:hover .prensa-card-img {
-  transform: scale(1.02);
+  transform: scale(1.015);
 }
 
 .prensa-card-tab {
   padding: 20px 28px;
   background: #fff;
+  border-top: 1px solid rgba(26, 16, 8, 0.06);
 }
 
 .prensa-card-medio {
@@ -529,33 +533,23 @@ h1, h2, h3, .title-italic {
   font-weight: 500;
 }
 
-/* Card stack: back card peeking */
-.prensa-card:nth-child(1) {
-  z-index: 2;
-}
-
-.prensa-card:nth-child(2) {
-  z-index: 1;
-  transform: translateY(40px) scale(0.95);
-  opacity: 0.7;
-}
-
-/* Active state swaps */
+/* Active card = front, full size */
 .prensa-card.prensa-card--active {
   z-index: 2;
-  transform: translateY(0) scale(1);
+  transform: translateY(0) scale(1) rotate(0deg);
   opacity: 1;
 }
 
+/* Inactive card = behind, peeking out */
 .prensa-card:not(.prensa-card--active) {
   z-index: 1;
-  transform: translateY(40px) scale(0.95);
-  opacity: 0.7;
+  transform: translateY(48px) scale(0.94) rotate(1.5deg);
+  opacity: 0.6;
 }
 
 .prensa-card:not(.prensa-card--active):hover {
-  transform: translateY(32px) scale(0.97);
-  opacity: 0.85;
+  transform: translateY(40px) scale(0.96) rotate(0.8deg);
+  opacity: 0.8;
 }
 
 /* 12. Contacto */
@@ -653,11 +647,11 @@ h1, h2, h3, .title-italic {
   .masonry-item:nth-child(1) { grid-column: span 1; grid-row: span 1; }
   
   .prensa-stack {
-    height: 440px;
+    height: 460px;
   }
   
   .prensa-card-img {
-    height: 340px;
+    height: 360px;
   }
 }
 
@@ -683,11 +677,11 @@ h1, h2, h3, .title-italic {
   }
 
   .prensa-stack {
-    height: 380px;
+    height: 360px;
   }
 
   .prensa-card-img {
-    height: 280px;
+    height: 260px;
   }
   
   .footer-bottom {
