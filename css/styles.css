@@ -362,7 +362,7 @@ h1, h2, h3, .title-italic {
 
 /* 8. Proceso */
 .proceso {
-  background-color: var(--color-rosa);
+  background-color: var(--color-timeline-bg);
   padding: 100px 0;
 }
 
@@ -396,7 +396,7 @@ h1, h2, h3, .title-italic {
 .step-num {
   width: 48px;
   height: 48px;
-  background-color: var(--color-rosa);
+  background-color: var(--color-timeline-bg);
   border: 1px solid var(--color-bordo);
   color: var(--color-bordo);
   display: flex;
@@ -469,14 +469,14 @@ h1, h2, h3, .title-italic {
 
 /* 11. Prensa */
 .prensa {
-  background-color: var(--color-crema);
+  background-color: var(--color-bordo);
   padding: 120px 0;
-  color: var(--color-oscuro);
+  color: var(--color-crema);
 }
 
 .prensa-label {
   text-align: center;
-  color: var(--color-bordo);
+  color: var(--color-rosa);
   margin-bottom: 56px;
 }
 
@@ -502,8 +502,8 @@ h1, h2, h3, .title-italic {
 .prensa-card-inner {
   background: #fff;
   overflow: hidden;
-  box-shadow: 0 8px 40px rgba(26, 16, 8, 0.12);
-  border: 1px solid rgba(26, 16, 8, 0.06);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .prensa-card-img {
@@ -554,7 +554,6 @@ h1, h2, h3, .title-italic {
 
 /* 12. Contacto */
 .contacto {
-  background-color: var(--color-rosa);
   padding: 120px 0;
 }
 
