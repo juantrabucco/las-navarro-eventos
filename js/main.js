@@ -72,6 +72,19 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // 5. Prensa card stack — click back card to swap
+    const prensaCards = document.querySelectorAll('.prensa-card');
+    
+    prensaCards.forEach(card => {
+        card.addEventListener('click', (e) => {
+            if (!card.classList.contains('prensa-card--active')) {
+                e.preventDefault();
+                prensaCards.forEach(c => c.classList.remove('prensa-card--active'));
+                card.classList.add('prensa-card--active');
+            }
+        });
+    });
+
     // Set current year in footer
     const yearEl = document.getElementById('year');
     if (yearEl) {
